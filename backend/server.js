@@ -24,7 +24,7 @@ if (process.env.NODE_ENV === 'production') {
 
   // Redirigir cualquier otra ruta a index.html (React maneja el frontend)
   app.get('*', (req, res) => 
-    res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+    res.sendFile(path.resolve(__dirname, 'client', 'build'))
   );
 } else {
   // Mensaje de bienvenida para cuando no está en producción
