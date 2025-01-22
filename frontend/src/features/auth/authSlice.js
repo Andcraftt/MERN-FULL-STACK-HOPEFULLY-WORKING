@@ -1,5 +1,5 @@
 import {createSlice, createAsyncThunk} from '@reduxjs/toolkit'
-import authService from './authService'
+import authService from 'https://mern-full-stack-1-0.onrender.com/authService'
 
 // Get user from localStorage
 const user = JSON.parse(localStorage.getItem('user'))
